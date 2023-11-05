@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+  <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+   <section name="Point_Of_Sales.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+  </sectionGroup>
+ </configSections>
+ <connectionStrings>
+		<add name="conStr" connectionString="Data Source=|DataDirectory|\DBCompact1.sdf" />
+	</connectionStrings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+    </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.SqlServer.Types" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-16.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <userSettings>
+    <Point_Of_Sales.Properties.Settings>
+      <setting name="notifications" serializeAs="String">
+        <value>True</value>
+      </setting>
+      <setting name="storeLogo" serializeAs="String">
+        <value>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</value>
+      </setting>
+      <setting name="PhoneNumber1" serializeAs="String">
+        <value>0100000</value>
+      </setting>
+      <setting name="PhoneNumber2" serializeAs="String">
+        <value>0111111</value>
+      </setting>
+      <setting name="F1Btn" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="F2Btn" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="F3Btn" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="F4Btn" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="F5Btn" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Print_Recept" serializeAs="String">
+        <value>True</value>
+      </setting>
+      <setting name="SecFlag" serializeAs="String">
+        <value>False</value>
+      </setting>
+      <setting name="SecCounter" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="IsFirstRun" serializeAs="String">
+        <value>True</value>
+      </setting>
+      <setting name="startTime" serializeAs="String">
+        <value>2023-07-02</value>
+      </setting>
+      <setting name="deliveryamount" serializeAs="String">
+        <value>0</value>
+      </setting>
+    </Point_Of_Sales.Properties.Settings>
+  </userSettings>
+</configuration>
